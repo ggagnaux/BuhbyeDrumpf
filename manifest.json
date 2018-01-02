@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+      "name": "Buh Bye Drumpf Chrome Extension",
+      "version": "1.0",
+      "description":      "This extension will attempt to replace every mention of Trump with other, more appropriate, titles.",
+      "content_scripts": [
+          {
+              "matches": [
+                  "*://*/*"
+              ],
+              "js": [
+                  "content.js"
+              ],
+              "run_at": "document_end"
+          }
+      ],
+      "browser_action": {
+          "default_icon": "icon16.png"
+      },
+      "icons": { 
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png" 
+    }      
+  }
+  
+  
